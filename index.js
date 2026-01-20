@@ -1,14 +1,19 @@
-const react1 = {
-    width: 10,
-    height: 20
+class rectangle {
+   constructor(width,height,color) {
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+
+    area() {
+        return this.width * this.height;
+    }
+
+    paint() {
+        console.log("the colour is " + this.color);
+    }
 }
 
-function cal(react) {
-    return react.width * react.height;
-}
-
-const ans = cal(react1);
+const rect = new rectangle(5,10,"red");
+const ans = rect.area();rect.paint();
 console.log(ans);
-
-
-
