@@ -17,4 +17,6 @@ class rectangle {
 ans = new rectangle (5,10,"red");
 area = ans.calarea();
 ans.PAINT();
-console.log( area);
+console.log(area);
+
+
