@@ -1,22 +1,21 @@
 class rectangle {
-    constructor(width,height,color) {
+    constructor(width, height, colour) {
         this.width = width;
         this.height = height;
-        this.color = color;
+        this.colour = colour;
     }
-
-    calarea() {
+    area() {
         return this.width * this.height;
     }
-
-    PAINT () {
-        console.log(" color is "+ this.color);
+    paint() {
+        console.log ('the rectangle is painted ' + this.colour);
     }
 }
 
-ans = new rectangle (5,10,"red");
-area = ans.calarea();
-ans.PAINT();
-console.log(area);
+ans = new rectangle ( 5,8, "red");
+area = ans .area() ;
+ans. paint ();
+console.log (area);
+    
 
 
