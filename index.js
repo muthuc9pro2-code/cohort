@@ -1,11 +1,10 @@
-function c() {
-    console.log("poda poolu");
+function greet(resolve) {
+    setTimeout(resolve,2000);
 }
-
-p = mk(5000).then(c);
-console.log(p);
-
-function mk(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
+function mk() {
+    return new Promise(greet);
 }
-
+function panda() {
+    console.log("Panda says hello!");
+}
+mk().then(panda);
