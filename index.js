@@ -1,21 +1,11 @@
-class rectangle {
-    constructor(height, width, color) {
-        this.width = width;
-        this.height = height;
-        this.color = color;
-    }
-    calarea() {
-        return this.width * this.height;
-    }
-    paint () {
-        console.log( "The painted colour is " + this.color);
-    }
+function c() {
+    console.log("poda poolu");
 }
 
-ans = new rectangle ( 6,7,"red");
-area = ans.calarea();
-ans.paint();
-console.log ( area);
+p = mk(5000).then(c);
+console.log(p);
 
-
+function mk(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
