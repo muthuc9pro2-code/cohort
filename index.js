@@ -1,10 +1,5 @@
-function greet(resolve) {
-    setTimeout(resolve,2000);
+function random() {
+     
 }
-function mk() {
-    return new Promise(greet);
-}
-function panda() {
-    console.log("Panda says hello!");
-}
-mk().then(panda);
+ let p = new Promise(random);
+ console.log(p);
