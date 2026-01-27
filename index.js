@@ -1,24 +1,19 @@
-const fs = require("fs");
+function test () {
+    return new Promise((resolve) => {
+        c = 0
+        for (let i = 0 ; i < 100000 ; i++){
+            c++;
+        }
+        resolve("poda podalanga");
+    });
+}
+let p = test()
 
-function readthefile() {
-    fs.readFile("a.txt","utf-8",function(err, data) {
-        console.log(data);
-    })
+function callback (display) {
+    console.log(display);
 }
 
-function promise () {
-    return new Promise (readthefile)
-}
-
-p = promise()
-
-function callback(open) {
-    console.log(open);
-}
-
-p.then(callback);
-
-
+p.then (callback)
  
 
 
