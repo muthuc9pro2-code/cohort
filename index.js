@@ -1,7 +1,18 @@
-function sum(a, b) {
-    return a+b;
+function suma() {
+    let p = "string";
+    p.split("");
+    let m = p.split("");
+    m.sort();
+    let q = m.sort();
+    q.join("");
 }
-console.log(sum(3,4));
+q.join("") = output;
+console.log("outout");
+
+
+
+
+
 
 
 
