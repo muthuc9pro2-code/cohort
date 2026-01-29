@@ -1,13 +1,20 @@
-function suma() {
-    let p = "string";
-    p.split("");
-    let m = p.split("");
-    m.sort();
-    let q = m.sort();
-    q.join("");
+function inAnagram(str1, str2) {
+     sortedstr1 = str1.toLowerCase().split("").sort().join("");
+     sortedstr2 = str2.toLowerCase().split("").sort().join("");
+
+    if (sortedstr1 == sortedstr2) {
+        console.log(true);
+        return true;
+    } else {
+        console.log(false);
+        return false;
+    }
 }
-q.join("") = output;
-console.log("outout");
+
+inAnagram("MUThukumar", "all the best"); 
+
+
+
 
 
 
