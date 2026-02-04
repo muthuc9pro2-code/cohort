@@ -1,6 +1,23 @@
-<div style="background-color: black; width: 100px; height: 100px;" id="box"></div>
-<button>change colour</button>
+<style>
+    div {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+
+    .widthmax {
+        width: 900px
+    }
+</style>
+
+<div id="do"> 
+</div>
+<button onclick="change()">change</button>
 
 <script>
-    
+    var box = document.getElementById("do");
+    function change() {
+        box.style.backgroundcolor = "red";
+        box.setAttribute=("class","widthmax");
+    }
 </script>
