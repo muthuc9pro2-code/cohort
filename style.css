@@ -12,13 +12,17 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+   
 
 }
 
 .container div {
-    padding: 20px;
     
+   text-align: center;
     width: 200px;
+    flex-basis: 25%;
+   
+    
 
 }
 
