@@ -1,98 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
-nav {
+body {
     background-color: black;
     color: white;
-    padding: 20px;
 }
 
-h1,ul,li {
-    display: inline;
-
-}
-
-ul{
-    margin-left: 1100px;
-    color: rgb(151, 142, 142);
-}
-li:hover {
+.tittlebar{
     color: white;
-    transition: 0.5s;
-    cursor: pointer;
-}
-input {
-    width: 900px;
-    height: 20px;
-    padding: 10px;
-   
-}
-.searchbar {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-
-}
-
-
-.c {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-   
-}
-
-.box {
-    width: 200px;
-    height: 300px;
-    border: black solid 2px;
-    padding: 10px;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.box:hover {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
-}
-
-.A {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
- .E {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
- }
- .last {
-    background-color: black;
-    color: white;   
-    display: flex;
-    justify-content: center;
-
- }
-
- .contact {
     text-align: center;
-    margin-top: 10px;
- }
- h2{
-    margin-top: 10px;
-    font-size: larger;
- }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container div {
+    padding: 20px;
+    
+    width: 200px;
+
+}
+
+
+
+
+
 
 
 
     
    
-
-
-
 
 
