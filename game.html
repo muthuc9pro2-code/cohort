@@ -1,0 +1,135 @@
+<style>
+    body {
+        background-image: url(https://wallpaperset.com/w/full/b/0/b/129600.jpg);
+        background-size: cover;
+        background-position: center;
+          font-family: Arial, sans-serif;
+    }
+
+
+/* Main container for all text */
+.game-box {
+    background: rgba(0, 0, 0, 0.75);   /* dark glass effect */
+    backdrop-filter: blur(6px);       /* fancy modern blur */
+    padding: 25px;
+    border-radius: 12px;
+    width: 420px;
+    margin: 60px auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* Title */
+h1 {
+    color: #fffae6;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px black;
+}
+
+/* Input box */
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Button that actually looks like a button */
+button {
+    background: #2fa4ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0d8af0;
+}
+
+/* Result text */
+p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+</style>
+
+
+    
+    
+    <br>
+    <br>        
+    <br>
+    <br>
+    <br>
+    <center>
+        <div class="game-box">
+    <h1>Guess the Number </h1>
+    <input type="number" id="input"> 
+    <button onclick="update()">Submit</button>
+    <br>
+    <p>Choose a number from 1 - 10</p>
+    <p id="result">
+       
+
+    </p>
+    <p id="attempts">
+        No .of attempts left : 10
+
+    </p>
+        </div>
+
+
+
+</center>
+
+<script>
+    var attempts = 10;
+    var b = document.getElementById("input");
+    var c = document.getElementById("result");
+    var d = document.getElementById("attempts");
+
+    function update () {
+         var a = Math.floor(Math.random() * 10) + 1;
+         if (attempts == 0) {
+            d.textContent = " No .of attempts left : 0";
+            alert("Game over!");
+            return;
+           
+        }
+
+        else if (b.value == 0 ) {
+            alert("Please enter a number between 1 and 10");
+            return;
+        }
+         else if (b.value > 10 || b.value < 0) {
+            alert("Please enter a number between 1 and 10");
+            return;
+        }
+        else if (b.value==a) {
+            c.textContent = "you're right";
+            alert("Congratulations! You guessed the number " + a + " correctly ");
+
+        }
+        else  {
+            attempts-=1;
+            c.textContent = "you're wrong the correct number is " + a;
+            d.textContent = "No .of attempts left : " + attempts;
+          
+        }
+      
+    }
+  
+ 
+</script>
+
+
