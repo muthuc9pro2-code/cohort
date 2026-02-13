@@ -1,8 +1,112 @@
-<h1 onclick="update(event)">one</h1>
-<h1 onclick="update(event)">two</h1>
-<h1 onclick="update(event)">three</h1>
-<h1 onclick="update(event)">four</h1>
-<h1 onclick="update(event)">five</h1>
-<h1 onclick="update(event)">six</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="heading">
+    <h1>
+        STUDENT FORM 
+    </h1>
+    </div>
+    <div class="inputform">
+        <form id="studentform">
+        <table>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your Name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Age
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter your Age" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="gender">male
+                <input type="radio" name="gender" id="gender">female
+            </td>
+            <tr>
+                <td>
+                    course
+                </td>
+                <td>
+                    <select id="course">
+                        <option>Javascript</option>
+                        <option>python</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-mail
+                </td>
+                <td>
+                    <input type="email" placeholder="E-MAIL@gmail.com" id="email">
+                </td>
+            </tr>
+           
+            <td colspan="2">
+                <button onclick="update()">
+                    save
+                </button>
+            </td>
+           
+            </tr>
+        </table>
+        </form>
+    </div>
+
+    <br> 
+    <br> 
+
+
+    <div class="outputform">
+        <table>
+            
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Course
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+            
+            <tbody id="outputprint">
+
+            </tbody>
+        </table>
+        
+    </div>
+
+
+
+
+    
+</body>
 
 <script src="todo.js"></script>
+</html>
