@@ -3,110 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO LIST</title>
+    <title>Mini Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
     <div class="heading">
-    <h1>
-        STUDENT FORM 
-    </h1>
+        <h1>STUDENT FORM</h1>
     </div>
     <div class="inputform">
-        <form id="studentform">
-        <table>
-            <tr>
-                <td>
-                    Name
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter your Name" id="name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Age
-                </td>
-                <td>
-                    <input type="number" placeholder="Enter your Age" id="age">
-                </td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td><input type="radio" name="gender" id="gender">male
-                <input type="radio" name="gender" id="gender">female
-            </td>
-            <tr>
-                <td>
-                    course
-                </td>
-                <td>
-                    <select id="course">
-                        <option>Javascript</option>
-                        <option>python</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    E-mail
-                </td>
-                <td>
-                    <input type="email" placeholder="E-MAIL@gmail.com" id="email">
-                </td>
-            </tr>
-           
-            <td colspan="2">
-                <button onclick="update()">
-                    save
-                </button>
-            </td>
-           
-            </tr>
-        </table>
+        <form id="reset">
+            <table>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Your Name" id="name">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Your Age" id="age">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        course
+                    </td>
+                    <td>
+                        <select id="course">
+                            <option value="" disabled selected hidden>Select Option</option>
+                            <option value="Java Script">Java Script</option>
+                            <option value="Python">Python</option>
+                            <option value="Machine Learning">Machine Learning</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        E-mail
+                    </td>
+                    <td>
+                        <input type="email" placeholder="example@gmail.com" id="email">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <p id="error"></p>
+                        <button type="button" onclick="update()">save</button>
+                    </td>
+                    </tr>
+            </table>
         </form>
     </div>
-
-    <br> 
-    <br> 
-
-
+    <br>
+    <br>
     <div class="outputform">
         <table>
-            
             <tr>
-                <th>
-                    Name
-                </th>
-                <th>
-                    Age
-                </th>
-                <th>
-                    Course
-                </th>
-                <th>
-                    Gender
-                </th>
-                <th>
-                    Email
-                </th>
-                <th>
-                    Action
-                </th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Gender</th>
+                <th>E-mail</th>
+                <th>Action</th>
             </tr>
-            
-            <tbody id="outputprint">
-
-            </tbody>
+            <tbody id="outputprint"></tbody>
         </table>
-        
     </div>
-
-
-
-
-    
 </body>
-
 <script src="todo.js"></script>
 </html>
+
