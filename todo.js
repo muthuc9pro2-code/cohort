@@ -72,13 +72,15 @@ function update() {
     
 }
 
-function inputshake(element) {
+function inputshake (element) {
     element.classList.add("shake");
-    setTimeout(function () {
-        element.classList.remove("shake")
+    setTimeout( function () {
+        element.classList.remove("shake");
     }, 400);
 
+
 }
+
 
 function deleteitem(event) {
     event.target.parentElement.parentElement.remove();
@@ -87,5 +89,4 @@ function deleteitem(event) {
          document.querySelector(".outputform").style.display = "none";
     }
 }
-
 
