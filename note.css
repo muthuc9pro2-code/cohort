@@ -157,3 +157,66 @@
     color: white;
     margin-bottom: 30px;
 }
+
+/* Tablet view */
+@media (max-width: 1024px) {
+
+    .container {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .note {
+        width: 45%;
+    }
+
+    .popup {
+        width: 60%;
+    }
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .note {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .popup {
+        width: 90%;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .popup input,
+    .popup textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .popup textarea {
+        font-size: 18px;
+    }
+
+    #addbutton {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .heading {
+        padding: 15px;
+        font-size: 22px;
+    }
+
+}
