@@ -1,0 +1,159 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+
+  font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+
+
+}
+ body {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/004/495/802/original/black-and-white-hand-drawn-scribble-texture-background-illustration-free-vector.jpg);
+        background-size: cover;
+        background-position: center;
+          
+    }
+
+
+.heading {
+    height: 50px;
+    background-color: black;;
+    color: white;
+    padding: 20px;
+    width: auto;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    border-radius: 30px;
+    width: 350px ;
+    height: fit-content;
+    margin: 25px;
+    vertical-align: top;
+    overflow-wrap: break-word;
+
+}
+
+.note h5 {
+    margin-top: 10px;
+}
+ 
+.note p {
+    margin-top: 20px;
+}
+
+.note button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addbutton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    cursor: pointer; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    font-family: Arial,  sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+  display: none;
+}
+.popup {
+    padding: 40px;
+    background-color: black;
+    width: 40%;
+    border-radius: 20px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: top;
+    display: none;
+    z-index: 2;
+}
+
+.popup input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid white;
+    outline: none;
+    color: white;
+}
+
+.popup textarea {
+    background: transparent;
+    margin-top: 30px;
+    border: solid white 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    outline: none;
+    color: white;
+    
+}
+
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.popup input::placeholder,
+.popup textarea::placeholder {
+    color: white;
+    font-weight: 400;
+}
+
+.popup p {
+    color: white;
+    font-weight: 900;
+    display: none;
+    margin-top: 10px;
+}
+
+.popup h2 {
+    color: white;
+    margin-bottom: 30px;
+}
